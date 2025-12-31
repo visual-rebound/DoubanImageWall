@@ -31,7 +31,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: execute py script to generate movie poster wall
-        run: python image_wall.py -i=${{ github.event.inputs.doubanId }} -s=Ture -c=20 -r=15 -o=0 -rt=5 -rd=False
+        run: python image_wall.py -i=${{ github.event.inputs.doubanId }} -s=Ture -c=20 -r=10 -o=0 -rt=0 -rd=False
 
       - name: execute py script to generate album cover wall
         run: python image_wall.py -i=${{ github.event.inputs.doubanId }} -m='music' -c=10 -r=8 -o=8 -rd=True
